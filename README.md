@@ -27,3 +27,12 @@ peace of mind.
 ![Screenshot 2025-04-19 161218](https://github.com/user-attachments/assets/060b1376-274d-44e9-ac27-2e4c9af8f23e)
 
 
+<h2>Resources Used</h2>
+<ul>
+  <li>Chat gpt</li>
+  <li>Gemini</li>
+</ul>
+<h2>Photos Used</h2>
+<ul>
+  <li>Unlist</li>
+</ul>
