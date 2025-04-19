@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-house-medical"></i>
+        MedTracker</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#" style="scroll-behavior: smooth;">About</a></li>
+      <li><a href="#">Personal Info</a></li>
+      <li><a href="appoiment.html">Appointment</a></li>
+    </ul>
+    <!-- mypage -->
+     
+  </nav>
+ 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7fafd;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      min-height: 100vh;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+      padding: 20px;
+      animation: slideInLeft 1s ease-in-out;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      color: #00796b;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .hero-text button {
+      padding: 14px 28px;
+      background-color: #00796b;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-text button:hover {
+      background-color: #004d40;
+    }
+
+    .hero-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+      padding: 20px;
+      animation: slideInRight 1s ease-in-out;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideInRight {
+      from { transform: translateX(50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+      }
+
+      .hero-text h1 {
+        font-size: 32px;
+      }
+
+      .hero-text p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero/Home Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Empowering Health with AI</h1>
+      
+      <p>
+        Welcome to our AI-powered medical healthcare platform. Get instant support, track your health,
+        and consult with intelligent systems trained to help you stay well, 24/7.
+      </p>
+      <button onclick="alert('Launching AI Assistant...')">Get Started</button>
+    </div>
+    <div class="hero-image">
+      <img src="second.jpg" alt="Healthcare AI">
+    </div>
+  </section>
+
+</body>
+</html>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4ff;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      color: #3f51b5;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      width: 30%;
+    }
+
+    .form-container {
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .form-container input {
+      padding: 10px;
+      margin: 10px 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .form-container button {
+      background: linear-gradient(45deg, #6a5acd, #7b68ee);
+      color: white;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .med-list {
+      margin: 20px;
+    }
+
+    .medicine-item {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .medicine-item .info {
+      font-size: 0.95rem;
+    }
+
+    .delete-btn {
+      color: red;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <section class="stats">
+    <div class="card">
+      <h3>Total Medicines</h3>
+      <p id="totalMeds">0</p>
+    </div>
+    <div class="card">
+      <h3>Upcoming Doses</h3>
+      <p id="upcomingDoses">0</p>
+    </div>
+    <div class="card">
+      <h3>Completed Today</h3>
+      <p>0</p>
+    </div>
+  </section>
+
+  <section class="form-container">
+
+    <input type="text" id="medName" placeholder="Medicine Name">
+    <input type="text" id="dosage" placeholder="Dosage (e.g. 500mg)">
+    <input type="date" id="startDate">
+    <input type="date" id="endDate">
+    <input type="time" id="time">
+    <button onclick="addMedicine()">Add Medicine</button>
+  </section>
+
+  <section class="med-list" id="medList">
+    <!-- Medicine items will appear here -->
+  </section>
+
+  <script>
+    let total = 0;
+
+    function addMedicine() {
+      const name = document.getElementById("medName").value;
+      const dose = document.getElementById("dosage").value;
+      const time = document.getElementById("time").value;
+
+      if (!name || !dose || !time) {
+        alert("Please fill in all fields");
+        return;
+      }
+
+      total++;
+      document.getElementById("totalMeds").textContent = total;
+      document.getElementById("upcomingDoses").textContent = total;
+
+      const medList = document.getElementById("medList");
+      const item = document.createElement("div");
+      item.className = "medicine-item";
+      item.innerHTML = `
+        <div class="info">
+          <strong>${name}</strong><br>
+          Dosage: ${dose} | Time: ${time}
+        </div>
+        <span class="delete-btn" onclick="removeMedicine(this)">Delete</span>
+      `;
+      medList.appendChild(item);
+
+      // Reset form
+      document.getElementById("medName").value = '';
+      document.getElementById("dosage").value = '';
+      document.getElementById("startDate").value = '';
+      document.getElementById("endDate").value = '';
+      document.getElementById("time").value = '';
+    }
+
+    function removeMedicine(el) {
+      el.parentElement.remove();
+      total--;
+      document.getElementById("totalMeds").textContent = total;
+      document.getElementById("upcomingDoses").textContent = total;
+    }
+  </script>
+
+
+
+<!-- About AI Mental Health Support Section -->
+<section class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <span id="element"></span>
+        <!-- <h2>About AI Mental Health Support</h2> -->
+        <p>
+          At <strong>AI Mental Health Support</strong>, we believe that everyone deserves access to emotional care, anytime and anywhere. 
+          Our intelligent system uses advanced AI to provide a safe, empathetic space where you can talk, vent, and reflect—no judgment, no pressure. 
+          Whether you're dealing with stress, anxiety, or just need someone to talk to, we're here for you 24/7.
+          <br><br>
+          Your well-being is our priority, and our mission is to make mental health support more accessible, affordable, and stigma-free.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="./first.jpg" alt="AI Mental Health Support">
+      </div>
+    </div>
+  </section>
+  
+  <!-- CSS -->
+  <style>
+    .about-section {
+      background-color: #f2f7fb8d;
+      padding: 60px 20px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+  
+    .about-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+  
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 30px;
+    }
+  
+    .about-text h2 {
+      font-size: 32px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+  
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #444;
+    }
+  
+    .about-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+  
+    .about-image img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+  
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+  
+      .about-text {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+      var typed = new Typed('#element', {
+        strings: ['<h2>About AI Mental Health Support</h2>', '<h2>Here we solve your problem</h2>'],
+        typeSpeed: 50,
+      });
+    </script>
+
+
+
+  <footer>
+    <!-- Footer HTML -->
+<footer>
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>Medicine Tracker</h3>
+        <p>Track your medications, stay on schedule, and manage your health more efficiently with our smart medicine tracker platform.</p>
+      </div>
+  
+      <div class="footer-section links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">My Tracker</a></li>
+          <li><a href="#">Reminders</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section contact">
+        <h4>Contact Us</h4>
+        <p>Email: support@medtracker.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <div class="socials">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/facebook-new.png"/></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png"/></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/twitter.png"/></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Medicine Tracker | All rights reserved.
+    </div>
+  </footer>
+  
+  <!-- Footer CSS -->
+  <style>
+    footer {
+      background-color: #2c3e50;
+      color: #ffffff;
+      padding: 40px 20px 10px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+  
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+  
+    .footer-section {
+      flex: 1;
+      margin: 20px;
+      min-width: 250px;
+    }
+  
+    .footer-section h3,
+    .footer-section h4 {
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+  
+    .footer-section p,
+    .footer-section a {
+      color: #dcdcdc;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+  
+    .footer-section ul li a:hover {
+      text-decoration: underline;
+      color: #1abc9c;
+    }
+  
+    .socials a {
+      margin-right: 10px;
+      display: inline-block;
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    .socials a:hover {
+      transform: scale(1.2);
+    }
+  
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #555;
+      font-size: 14px;
+      color: #bbb;
+    }
+  
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .footer-section {
+        text-align: center;
+      }
+    }
+  </style>
+  </footer>
+
+</body>
+</html>
+
+</body>
+</html>
