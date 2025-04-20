@@ -19,8 +19,10 @@
     <div class="logo">
         <i class="fa-solid fa-house-medical"></i>
         MedTracker</div>
-    <ul class="nav-links">
+        
+    <ul class="nav-links ">
       <li><a href="#">Home</a></li>
+      <li><a href="app.html">Reminder</a></li>
       <li><a href="about.html" style="scroll-behavior: smooth;">About</a></li>
       <li><a href="personalinfo.html">Personal Info</a></li>
       <li><a href="appoiment.html">Appointment</a></li>
@@ -28,7 +30,15 @@
     
      
   </nav>
+ 
 </head>
+<script>
+  const burger=document.querySelector(".burger");
+  const nav=document.querySelector(".nav-links");
+  burger.addEventListener("click",()=>{
+    nav.classList.toggle(".v-list-resp")
+  });
+</script>
 <body>
 
 
@@ -122,6 +132,11 @@
   <script src="new.js">
     
   </script>
+
+
+
+
+
 
 
 
