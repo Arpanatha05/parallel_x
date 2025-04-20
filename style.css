@@ -18,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
    
   }
   
@@ -91,7 +92,7 @@
     padding: 0px;
     text-align: center;
     height: 200px;
-    margin-left: 268px;
+    margin-left: 250px;
 
 
     gap: 20px;
