@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Medical Website</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <div class="container">
+    <h2>About Us</h2><div class="toolbox">
+  <h3>Who We Are</h3>
+  <p>We are a team of experienced medical professionals dedicated to providing high-quality, compassionate healthcare for all.</p>
+</div>
+
+<div class="toolbox">
+  <h3>See Our Work</h3>
+  <p>Browse our success stories and the positive outcomes we've helped achieve through expert care and support.</p>
+</div>
+
+<div class="toolbox">
+  <h3>Testimonials</h3>
+  <p>Read what our patients are saying about the care they received at our facilities.</p>
+</div>
+
+<div class="toolbox">
+  <h3>Services</h3>
+  <p> we are offering you a reminder to take your medicine. In case of any emargency we preffer best doctor services & also take appointment. Create your medicale profile to save your prescrition from getting lost</p>
+</div>
+
+<div class="toolbox">
+  <h3>Support</h3>
+  <p>Need help? Our supporting chat bot is already here to help you. Farthur need you can contact our team with the right bottom corner of the home page. Our team is 24x7 available to answer your questions and provide assistance.</p>
+</div>
+
+<div class="feedback">
+  <p><strong>Was this page helpful?</strong></p>
+  <div class="feedback-buttons">
+    <button onclick="submitFeedback('Yes')">Yes</button>
+    <button onclick="submitFeedback('No')">No</button>
+  </div>
+</div>
+
+<div class="describe-box">
+  <h3>Your Feedback about this page</h3>
+  <textarea id="feedback" placeholder="Write your experience here..."></textarea>
+  <button onclick="submitFeedback('Yes')" class="feed">Submit</button>
+</div>
+
+  </div> 
+   <script>
+   const feedback= document.querySelector("#feedback");
+    function submitFeedback(answer) {
+      alert('You selected: ' + answer + '. Thank you for your Response!');
+    }
+    
+    function Submit(answer){
+        alert('You selected: ' + answer + '. Thank you for your feedback!');
+        
+    }
+  </script></body>
+</html>

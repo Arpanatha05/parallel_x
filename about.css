@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h2 {
+    color: teal;
+    border-bottom: 2px solid teal;
+    padding-bottom: 10px;
+  }
+  .toolbox {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #e9f7f7;
+  }
+  .toolbox h3 {
+    margin-top: 0;
+    color: #007777;
+  }
+  .feedback-buttons {
+    margin-top: 30px;
+  }
+  .feedback-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #0096c7;
+    background-color: #fff;
+    color: #0096c7;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .feedback-buttons button:hover {
+    background-color: #0096c7;
+    color: #fff;
+  }
+  .describe-box {
+    margin-top: 40px;
+  }
+  textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  .feed{
+    text-align: center;
+    color:#0096c7 ;
+    border: 2px solid #0096c7;
+    height: 45px;
+    width: 70px;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .feed:hover{
+    background-color: #0096c7;
+    color: #fff;
+  }

@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+
+
+<!-- This is navbar Area -->
+
+
+  <nav class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-house-medical"></i>
+        MedTracker</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="about.html" style="scroll-behavior: smooth;">About</a></li>
+      <li><a href="personalinfo.html">Personal Info</a></li>
+      <li><a href="appoiment.html">Appointment</a></li>
+    </ul>
+    
+     
+  </nav>
+</head>
+<body>
+
+
+  
+   
+
+  <!-- Hero/Home Section /body area -->
+
+
+
+  <section class="hero">
+    <div class="hero-text">
+      <!-- <h1>Empowering Health with AI</h1> -->
+      <span id="justsay"></span>
+      <p>
+        Welcome to our AI-powered medical healthcare platform. Get instant support, track your health,
+        and consult with intelligent systems trained to help you stay well, 24/7.
+      </p>
+      <button onclick="alert('Launching AI Assistant...')">Get Started</button>
+    </div>
+    <div class="hero-image">
+      <img src="second.jpg" alt="Healthcare AI">
+    </div>
+  </section>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+      var typed = new Typed('#justsay', {
+        strings: ['<h1>Empowering Health with AI</h1>'],
+        typeSpeed: 50,
+      });
+    </script>
+
+</body>
+</html>
+
+
+
+<!-- Medicine include part -->
+
+
+
+</head>
+<body>
+
+  
+
+  <section class="stats">
+    <div class="card">
+      <h3>Total Medicines</h3>
+      <p id="totalMeds">0</p>
+    </div>
+    <div class="card">
+      <h3>Upcoming Doses</h3>
+      <p id="upcomingDoses">0</p>
+    </div>
+    <div class="card">
+      <h3>Completed Today</h3>
+      <p>0</p>
+    </div>
+  </section>
+
+  <section class="form-container">
+    
+   
+    <div id="input">
+      <p>Medicne Name
+    <input type="text" id="medName" placeholder="Medicine Name"></p>
+    <p>Medicine Dose
+    <input type="text" id="dosage" placeholder="Dosage (e.g. 500mg)"></p>
+    <p>Starting Date
+    <input type="date" id="startDate"></p>
+    <p>Ending Date
+    <input type="date" id="endDate"></p>
+    <p>Duration
+    <input type="time" id="time"></p>
+    <button onclick="addMedicine()">Add Medicine</button>
+  </div>
+  </section>
+  <style>
+    #input{
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  
+
+  <section class="med-list" id="medList">
+   
+  </section>
+
+  <script src="new.js">
+    
+  </script>
+
+
+
+<!-- About AI Mental Health Support Section -->
+
+
+
+
+<section class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <span id="element"></span>
+        
+        <p>
+          At <strong>AI Mental Health Support</strong>, we believe that everyone deserves access to emotional care, anytime and anywhere. 
+          Our intelligent system uses advanced AI to provide a safe, empathetic space where you can talk, vent, and reflect—no judgment, no pressure. 
+          Whether you're dealing with stress, anxiety, or just need someone to talk to, we're here for you 24/7.
+          <br><br>
+          Your well-being is our priority, and our mission is to make mental health support more accessible, affordable, and stigma-free.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="./first.jpg" alt="AI Mental Health Support">
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+      var typed = new Typed('#element', {
+        strings: ['<h2>About AI Mental Health Support</h2>', '<h2>Here we solve your problem</h2>'],
+        typeSpeed: 50,
+      });
+    </script>
+
+
+<!-- chatbot section part -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+    <section class="chat-window">
+        <button class="close">x close</button>
+        <div class="chat">
+            <div class="model">
+                <p>Hi, how can I help you?</p>
+            </div>
+            
+        </div>
+        <div class="input-area">
+            <input placeholder="Ask me anything..." type="text">
+            <button>
+                
+                <img src="send.png" alt="send">
+            </button>
+        </div>
+    </section>
+
+    <div class="chat-button" >
+        
+        <img src="chatbot.png" alt="start chat" >
+    </div>
+    
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+    
+    <script type="module" src="chatbot.js"></script>
+    <footer>
+
+
+
+
+      <!-- Footer HTML/footer part  -->
+
+
+
+
+  <footer>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3>Medicine Tracker</h3>
+          <p>Track your medications, stay on schedule, and manage your health more efficiently with our smart medicine tracker platform.</p>
+        </div>
+    
+        <div class="footer-section links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Tracker</a></li>
+            <li><a href="#">Reminders</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-section contact">
+          <h4>Contact Us</h4>
+          <p>Email: support@medtracker.com</p>
+          <p>Phone: +1 234 567 890</p>
+          <div class="socials">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/facebook-new.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/twitter.png"/></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Medicine Tracker | All rights reserved.
+      </div>
+    </footer>
+    
+    <!-- Footer CSS -->
+   
+    </footer>
+  
+  </body>
+  </html>
+  
+  </body>
+  </html>
+    
+</body>
+</html>
+
+
+
+
+
+
+
