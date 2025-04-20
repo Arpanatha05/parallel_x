@@ -8,35 +8,45 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-</head>
-<body>
-
-
 <!-- This is navbar Area -->
+</head>
+<body style="position: sticky;">
 
 
-  <nav class="navbar">
+
+
+  <nav  style="position: sticky;"  class="navbar">
     <div class="logo">
         <i class="fa-solid fa-house-medical"></i>
         MedTracker</div>
         
-    <ul class="nav-links ">
+    <ul  class="nav-links ">
       <li><a href="#">Home</a></li>
       <li><a href="app.html">Reminder</a></li>
       <li><a href="about.html" style="scroll-behavior: smooth;">About</a></li>
       <li><a href="personalinfo.html">Personal Info</a></li>
       <li><a href="appoiment.html">Appointment</a></li>
     </ul>
+    <div class="icon">
+      <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
     
      
   </nav>
  
 </head>
 <script>
-  const burger=document.querySelector(".burger");
-  const nav=document.querySelector(".nav-links");
-  burger.addEventListener("click",()=>{
-    nav.classList.toggle(".v-list-resp")
+  const icon=document.querySelector(".icon");
+  const ul=document.querySelector(".nav-links");
+  icon.addEventListener("click",()=>{
+    ul.classList.toggle("showdata");
+
+    if(ul.className==="showdata"){
+      document.querySelector("#bar").className="fa-solid fa-xmark";
+    }
+    else{
+       document.querySelector("#bar").className="fa-solid fa-bars";
+    }
   });
 </script>
 <body>
@@ -207,7 +217,7 @@
         </div>
     </section>
 
-    <div class="chat-button" >
+    <div class="chat-button" style="position: sticky; margin-left: 90%;">
         
         <img src="chatbot.png" alt="start chat" >
     </div>

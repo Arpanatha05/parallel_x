@@ -8,6 +8,7 @@
     body{
         font-family: "Arial", sans-serif;
         background-color:#eaeaea;
+        
     }
     .container {
         max-width: 500px;
@@ -16,6 +17,9 @@
         padding: 1px 20px 20px 20px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        
+        margin-top: 150px;
+        
     }
     label,
     input,
@@ -53,22 +57,35 @@
     button:hover{
         background-color: #45a049;
     }
+    #title{
+        height: 35px;
+
+    }
+    #description{
+        height: 35px;
+    }
+    #date{
+        height: 35px;
+    }
+    #time{
+        height: 35px;
+    }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2 style="text-align: center">Reminder</h2>
+        <h2 style="text-align: center">Medicine Reminder</h2>
 
-        <label for="">Title:</label>
+        <label for="">Medicine name:</label>
         <input type="text" id="title"/>
-        <label for="">Description :</label>
+        <label for="">Medicine Description :</label>
         <input type="text" id="description">
         <label for="">Date:</label>
         <input type="date" id="date" />
         <label for="">Time :</label>
         <input type="time" id="time" />
 
-        <button style="width: 100%" onclick = "scheduleReminder();">
+        <button style="height: 35px;   width: 100%" onclick = "scheduleReminder();">
             Schedule Reminder
         </button>
 
