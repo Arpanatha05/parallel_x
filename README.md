@@ -12,6 +12,7 @@ timely reminders, health tracking, and caregiver alerts, helping families like R
 peace of mind.
 <h2>Login page</h2>
 
+
 ![Screenshot 2025-04-21 084734](https://github.com/user-attachments/assets/a0b66cf8-a6cf-4ae0-b1ea-ce5121f5a97e)
 
 <h2>Signup Page</h2>
@@ -20,6 +21,7 @@ peace of mind.
 
 
 <h2>Header / Main</h2>
+
 
 ![Screenshot 2025-04-19 161124](https://github.com/user-attachments/assets/859ac7dd-c155-4ac5-ba7e-a48fe5b7130b)
 
